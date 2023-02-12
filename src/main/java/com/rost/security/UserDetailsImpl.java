@@ -7,13 +7,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.rost.models.Person;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
-@Getter
-public class UserDetailsImpl implements UserDetails {
-    private final Person principal;
+public record UserDetailsImpl(Person principal) implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.emptyList();

@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driverClassName:
+    url:
+    username:
+    password:
+
+  jpa:
+    properties:
+      hibernate:
+        dialect:
+        show_sql:

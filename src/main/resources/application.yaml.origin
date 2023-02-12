@@ -10,3 +10,9 @@ spring:
       hibernate:
         dialect:
         show_sql:
+
+jwt:
+  token:
+    subject:
+    issuer:
+    secret:
